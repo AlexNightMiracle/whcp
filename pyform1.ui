@@ -332,7 +332,7 @@ QTabBar::tab:selected, QTabBar::tab:hover {
 </string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideLeft</enum>
@@ -848,62 +848,19 @@ color: rgb(95, 95, 95);</string>
       <string>Статистика</string>
      </attribute>
      <layout class="QGridLayout" name="gridLayout_4">
-      <item row="16" column="1">
-       <widget class="QLabel" name="label_21">
+      <item row="13" column="1">
+       <widget class="QLabel" name="label_17">
         <property name="text">
-         <string>Вычет НДФЛ 13% без премии</string>
+         <string>Часов выше нормы</string>
         </property>
        </widget>
       </item>
-      <item row="15" column="1">
-       <widget class="QLCDNumber" name="lcdNumber_8"/>
-      </item>
-      <item row="16" column="2">
-       <widget class="QLabel" name="label_20">
-        <property name="text">
-         <string>Возможная премия(1+1)</string>
-        </property>
-       </widget>
-      </item>
-      <item row="15" column="0">
-       <widget class="QLCDNumber" name="lcdNumber_4"/>
-      </item>
-      <item row="0" column="0" alignment="Qt::AlignLeft|Qt::AlignTop">
-       <widget class="QDateEdit" name="dateEdit_4">
-        <property name="displayFormat">
-         <string>MM.yyyy</string>
-        </property>
-        <property name="calendarPopup">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="17" column="1">
-       <widget class="QLCDNumber" name="lcdNumber_14">
+      <item row="15" column="3" colspan="2">
+       <widget class="QLCDNumber" name="lcdNumber_10">
         <property name="minimumSize">
          <size>
           <width>210</width>
           <height>70</height>
-         </size>
-        </property>
-        <property name="digitCount">
-         <number>6</number>
-        </property>
-       </widget>
-      </item>
-      <item row="13" column="0">
-       <widget class="QLabel" name="label_13">
-        <property name="text">
-         <string>Норма часов</string>
-        </property>
-       </widget>
-      </item>
-      <item row="15" column="2">
-       <widget class="QLCDNumber" name="lcdNumber_9">
-        <property name="minimumSize">
-         <size>
-          <width>300</width>
-          <height>0</height>
          </size>
         </property>
         <property name="digitCount">
@@ -924,19 +881,8 @@ color: rgb(95, 95, 95);</string>
         </property>
        </widget>
       </item>
-      <item row="13" column="2">
-       <widget class="QLabel" name="label_18">
-        <property name="text">
-         <string>Всего часов</string>
-        </property>
-       </widget>
-      </item>
-      <item row="16" column="0">
-       <widget class="QLabel" name="label_23">
-        <property name="text">
-         <string>Вычет НДФЛ 13% с премией</string>
-        </property>
-       </widget>
+      <item row="15" column="0">
+       <widget class="QLCDNumber" name="lcdNumber_4"/>
       </item>
       <item row="17" column="2">
        <widget class="QLCDNumber" name="lcdNumber_11">
@@ -951,10 +897,50 @@ color: rgb(95, 95, 95);</string>
         </property>
        </widget>
       </item>
-      <item row="13" column="1">
-       <widget class="QLabel" name="label_17">
+      <item row="13" column="3" colspan="2">
+       <widget class="QLabel" name="label_19">
         <property name="text">
-         <string>Часов выше нормы</string>
+         <string>Повезёт(с премией)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>Норма часов</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" rowspan="6" colspan="5">
+       <layout class="QGridLayout" name="gridLayout_3"/>
+      </item>
+      <item row="16" column="2">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>Возможная премия(1+1)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="QLCDNumber" name="lcdNumber_8"/>
+      </item>
+      <item row="16" column="3" colspan="2">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>Не повезёт(нет премии)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_9">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="digitCount">
+         <number>6</number>
         </property>
        </widget>
       </item>
@@ -962,6 +948,49 @@ color: rgb(95, 95, 95);</string>
        <widget class="QPushButton" name="pushButton_2">
         <property name="text">
          <string>Сохранить норму часов</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1">
+       <widget class="QLCDNumber" name="lcdNumber_14">
+        <property name="minimumSize">
+         <size>
+          <width>210</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="digitCount">
+         <number>6</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" alignment="Qt::AlignLeft|Qt::AlignTop">
+       <widget class="QDateEdit" name="dateEdit_4">
+        <property name="displayFormat">
+         <string>MM.yyyy</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="2">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>Всего часов</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="3" colspan="2">
+       <widget class="QLCDNumber" name="lcdNumber_13">
+        <property name="minimumSize">
+         <size>
+          <width>210</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="digitCount">
+         <number>6</number>
         </property>
        </widget>
       </item>
@@ -984,46 +1013,17 @@ color: rgb(95, 95, 95);</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="0" rowspan="6" colspan="5">
-       <layout class="QGridLayout" name="gridLayout_3"/>
-      </item>
-      <item row="15" column="3" colspan="2">
-       <widget class="QLCDNumber" name="lcdNumber_10">
-        <property name="minimumSize">
-         <size>
-          <width>210</width>
-          <height>70</height>
-         </size>
-        </property>
-        <property name="digitCount">
-         <number>6</number>
-        </property>
-       </widget>
-      </item>
-      <item row="13" column="3" colspan="2">
-       <widget class="QLabel" name="label_19">
+      <item row="16" column="1">
+       <widget class="QLabel" name="label_23">
         <property name="text">
-         <string>Повезёт(с премией)</string>
+         <string>Вычет НДФЛ 13% с премией</string>
         </property>
        </widget>
       </item>
-      <item row="17" column="3" colspan="2">
-       <widget class="QLCDNumber" name="lcdNumber_13">
-        <property name="minimumSize">
-         <size>
-          <width>210</width>
-          <height>70</height>
-         </size>
-        </property>
-        <property name="digitCount">
-         <number>6</number>
-        </property>
-       </widget>
-      </item>
-      <item row="16" column="3" colspan="2">
-       <widget class="QLabel" name="label_22">
+      <item row="16" column="0">
+       <widget class="QLabel" name="label_21">
         <property name="text">
-         <string>Не повезёт(нет премии)</string>
+         <string>Вычет НДФЛ 13% без премии</string>
         </property>
        </widget>
       </item>

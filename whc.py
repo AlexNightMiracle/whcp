@@ -183,8 +183,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             x2h = monthallhours - self.nh
             profitnoreward = sum(monthprofit) + (x2h * self.rate) + (monthallminutes * (self.rate / 60))
             profitreward = profitnoreward + monthreward
-            ndflreward = profitnoreward * 0.13
-            ndflnoreward = profitreward * 0.13
+            ndflreward = profitreward * 0.13
+            ndflnoreward = profitnoreward * 0.13
             profitnoreward -= ndflnoreward
             profitreward -= ndflreward
             self.ui.lcdNumber_9.display(alltime)
@@ -200,8 +200,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             alltime = str(f'{monthallhours}:{monthallminutes}')
             profitnoreward = sum(monthprofit) + (monthallminutes * (self.rate / 60))
             profitreward = profitnoreward + monthreward
-            ndflreward = profitnoreward * 0.13
-            ndflnoreward = profitreward * 0.13
+            ndflreward = profitreward * 0.13
+            ndflnoreward = profitnoreward * 0.13
             profitnoreward -= ndflnoreward
             profitreward -= ndflreward
             self.ui.lcdNumber_9.display(alltime)
