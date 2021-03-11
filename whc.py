@@ -1,6 +1,3 @@
-#добавить редактирование тарифа
-#включить учет разрывных смен, премий, вычет налогов
-
 import sys
 from datetime import timedelta, datetime
 from PyQt5 import uic
