@@ -62,7 +62,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.ui.pushButton_5.clicked.connect(self.updatemr)
         self.ui.pushButton_6.clicked.connect(self.updatetrs)
         self.ui.pushButton_7.clicked.connect(self.updaterate)
-#блок вызова событий изменения времени на ЭВД     
+#блок вызова событий изменения времени на ЭВД
+        self.ui.checkBox.stateChanged.connect(self.disp1)
         self.ui.timeEdit.timeChanged.connect(self.disp1)
         self.ui.timeEdit_2.timeChanged.connect(self.disp1)
         self.ui.timeEdit_3.timeChanged.connect(self.disp1)
