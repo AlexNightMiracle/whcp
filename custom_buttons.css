@@ -1,0 +1,39 @@
+.button1 {{
+  height: 55px;
+  color: #b0b7c6;
+  border-color: #b0b7c6;
+  font-size: 7pt;
+}}
+.button2 {{
+  height: 55px;
+  color: #8533ff;
+  border-color: #8533ff;
+  font-size: 7pt;
+}}
+.button3 {{
+  height: 55px;
+  color: #120a8f;
+  border-color: #120a8f;
+  font-size: 7pt;
+}}
+.button4 {{
+  height: 55px;
+  color: #8b0000;
+  border-color: #8b0000;
+  font-size: 7pt;
+}}
+.button00 {{
+  height: 55px;
+  color: #00b300;
+  border-color: #00b300;
+  font-size: 7pt;
+}}
+.button01 {{
+  height: 55px;
+  color: #00e600;
+  border-color: #00e600;
+  font-size: 7pt;
+}}
+.button0 {{
+  height: 55px;
+}}
